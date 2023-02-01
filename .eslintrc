@@ -7,7 +7,9 @@
   "extends": ["airbnb-base", "prettier", "plugin:node/recommended"],
   "globals": {
     "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
+    "SharedArrayBuffer": "readonly",
+    "tasks": "writable",
+    "logFunction": "readonly"
   },
   "parserOptions": {
     "ecmaVersion": 2018
@@ -19,8 +21,12 @@
     "no-console": "off",
     "func-names": "off",
     "no-plusplus": "off",
-    "no-process-exit": "off",  
-    "class-methods-use-this": "off"   
-  }  
+    "no-process-exit": "off",
+    "class-methods-use-this": "off",
+    "node/no-unsupported-features/es-syntax": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-dynamic-require": "off",
+    "global-require": "off",
+    "node/no-unpublished-require": "off"
+  }
 }
-   
