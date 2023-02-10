@@ -20,6 +20,15 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
+      projectId: {
+        type: Sequelize.UUID,
+        allowNull: false,
+        references: {
+          model: 'project',
+          key: 'id',
+        },
+        onDelete: 'CASCADE',
+      },
       created_at: {
         type: Sequelize.DATE,
         allowNull: false,

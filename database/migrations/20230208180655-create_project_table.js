@@ -18,6 +18,10 @@ module.exports = {
         allowNull: true,
         defaultValue: null,
       },
+      sprintDuration: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
       created_at: {
         type: Sequelize.DATE,
         allowNull: false,

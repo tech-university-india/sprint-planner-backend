@@ -21,6 +21,10 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
+      dependencies: {
+        type: Sequelize.ARRAY(Sequelize.STRING),
+        defaultValue: [],
+      },
       //   developerId: {
       //     type: Sequelize.INTEGER,
       //     allowNull: true,

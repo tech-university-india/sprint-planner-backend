@@ -11,8 +11,7 @@ static associate(models) {
 */
 const getProject = async (id) => {
   // include stories and developers
-  const project = await Project.findOne({
-    where: { id },
+  const project = await Project.findByPk(id, {
     include: ['stories', 'developers'],
   });
   return project;
@@ -36,8 +35,7 @@ const createProject = async (project) => {
   await Developer.bulkCreate(developersWithProjectId);
   // --------------------------------------------------------------------------------
 
-  const result = await Project.findOne({
-    where: { id: savedProject.id },
+  const result = await Project.findByPk(savedProject.id, {
     include: ['stories', 'developers'],
   });
   return result;

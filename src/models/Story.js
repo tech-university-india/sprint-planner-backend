@@ -30,6 +30,10 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         allowNull: false,
       },
+      dependencies: {
+        type: DataTypes.ARRAY(DataTypes.STRING),
+        defaultValue: [],
+      },
       //   developerId: {
       //     type: DataTypes.INTEGER,
       //     allowNull: true,
@@ -42,7 +46,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       sequelize,
       modelName: 'Story',
-      tableName: 'developer',
+      tableName: 'story',
       createdAt: 'created_at',
       updatedAt: 'updated_at',
     }
