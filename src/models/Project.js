@@ -4,8 +4,7 @@ module.exports = (sequelize, DataTypes) => {
   class Project extends Model {
     static associate(models) {
       Project.hasMany(models.Story, { foreignKey: 'projectId', as: 'stories' });
-      Project.belongsToMany(models.Developer, {
-        through: 'project_developer_junction',
+      Project.hasMany(models.Developer, {
         foreignKey: 'projectId',
         as: 'developers',
       });
@@ -27,6 +26,11 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         allowNull: true,
         defaultValue: null,
+      },
+      sprintDuration: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        defaultValue: 2, // 2 weeks (= 10 working days)
       },
     },
     {

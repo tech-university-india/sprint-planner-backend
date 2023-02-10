@@ -4,13 +4,18 @@ module.exports = {
     // table name: story
     await queryInterface.createTable('story', {
       id: {
-        type: Sequelize.UUID,
+        type: Sequelize.STRING, // input from frontend
         primaryKey: true,
         allowNull: false,
       },
       title: {
         type: Sequelize.STRING,
         allowNull: false,
+        unique: true,
+      },
+      description: {
+        type: Sequelize.TEXT,
+        allowNull: true,
       },
       storyPoints: {
         type: Sequelize.INTEGER,
@@ -19,7 +24,7 @@ module.exports = {
       //   developerId: {
       //     type: Sequelize.INTEGER,
       //     allowNull: true,
-      //   },
+      //   }, -> will be calculated
       projectId: {
         type: Sequelize.UUID,
         allowNull: false,
@@ -28,6 +33,14 @@ module.exports = {
           key: 'id',
         },
         onDelete: 'CASCADE',
+      },
+      created_at: {
+        type: Sequelize.DATE,
+        allowNull: false,
+      },
+      updated_at: {
+        type: Sequelize.DATE,
+        allowNull: false,
       },
     });
   },

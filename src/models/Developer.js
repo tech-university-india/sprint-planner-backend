@@ -4,22 +4,34 @@ module.exports = (sequelize, DataTypes) => {
   class Developer extends Model {
     static associate(models) {
       //   Developer.hasMany(models.Story, { foreignKey: 'projectId' });
-      Developer.belongsToMany(models.Project, {
-        through: 'project_developer_junction',
-        foreignKey: 'developerId',
-        as: 'projects',
+      Developer.belongsTo(models.Project, {
+        foreignKey: 'projectId',
+        as: 'project',
+        onDelete: 'CASCADE',
       });
     }
   }
   Developer.init(
     {
-      fmno: {
-        type: DataTypes.INTEGER,
+      id: {
+        type: DataTypes.STRING,
         primaryKey: true,
         allowNull: false,
       },
       name: {
         type: DataTypes.STRING,
+        allowNull: false,
+      },
+      capacity: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+      },
+      sprintCapacity: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+      },
+      projectId: {
+        type: DataTypes.UUID,
         allowNull: false,
       },
     },
