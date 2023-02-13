@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest",
     "generateMigration": "sequelize migration:generate --name",
     "migrate": "sequelize db:migrate"
   },
