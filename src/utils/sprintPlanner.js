@@ -263,6 +263,10 @@ const planSprints = (stories, numberOfSprints, sprintDuration, capacity) => {
 
 // main function
 const getSprints = (stories, developers, sprintDuration, capacity) => {
+  console.log('stories', stories);
+  console.log('developers', developers);
+  console.log('sprintDuration', sprintDuration);
+  console.log('capacity', capacity);
   if (developers.length === 0) throw new Error('No developers available');
   if (stories.length === 0) throw new Error('No stories available');
   const { dependencyGraph, indegrees } = getDependencyGraph(stories);
@@ -284,7 +288,7 @@ const getSprints = (stories, developers, sprintDuration, capacity) => {
     numberOfSprints,
     sprintDuration,
     capacity
-  );
+  ); // also return the developers array with the stories assigned to them
   return sprints;
 };
 
