@@ -4,14 +4,13 @@ module.exports = {
     // table name: story
     await queryInterface.createTable('story', {
       id: {
-        type: Sequelize.STRING, // input from frontend
+        type: Sequelize.INTEGER, // input from frontend
         primaryKey: true,
         allowNull: false,
       },
       title: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true,
       },
       description: {
         type: Sequelize.TEXT,
@@ -22,8 +21,12 @@ module.exports = {
         allowNull: false,
       },
       dependencies: {
-        type: Sequelize.ARRAY(Sequelize.STRING),
+        type: Sequelize.ARRAY(Sequelize.INTEGER),
         defaultValue: [],
+      },
+      preAssignedDeveloperId: {
+        type: Sequelize.INTEGER,
+        allowNull: true,
       },
       //   developerId: {
       //     type: Sequelize.INTEGER,
@@ -37,6 +40,7 @@ module.exports = {
           key: 'id',
         },
         onDelete: 'CASCADE',
+        primaryKey: true, // composite primary key (id, projectId)
       },
       created_at: {
         type: Sequelize.DATE,

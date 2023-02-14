@@ -2,88 +2,87 @@
     "title": "Sprint planner planning sprints",
     "duration": 15,
     "sprintDuration": 2, 
+    "sprintCapacity": 8,
     "stories": [
         {
-            "id": "A",
+            "id": 1,
             "title": "As a user I want to be able to create a sprint",
             "description": "A sprint is a period of time during which a set of stories are worked on",
             "dependencies": [],
-            "storyPoints": 3
+            "storyPoints": 3,
+            "preAssignedDeveloperId": 1
         },
         {
-            "id": "B",
+            "id": 2,
             "title": "Kuchh naya likh copilot",
             "description": "A sprint is a period of time during which a set of stories are worked on",
-            "dependencies": ["D", "E"],
-            "storyPoints": 4
+            "dependencies": [4, 5],
+            "storyPoints": 4,
+            "preAssignedDeveloperId": 3
         },
         {
-            "id": "C",
+            "id": 3,
             "title": "As be able to create a sprint",
             "description": "A sprint is a period of time during which a set of stories are worked on",
             "dependencies": [],
             "storyPoints": 5
         },
         {
-            "id": "D",
+            "id": 4,
             "title": "As a user I want to be able to e a sprint",
             "description": "A sprint is a period of time during which a set of stories are worked on",
-            "dependencies": ["A", "C"],
+            "dependencies": [1, 3],
             "storyPoints": 1
         },
         {
-            "id": "E",
+            "id": 5,
             "title": " user I want to be able to create a sprint",
             "description": "A sprint is a period of time during which a set of stories are worked on",
-            "dependencies": ["A"],
+            "dependencies": [1],
             "storyPoints": 2
         },
         {
-            "id": "F",
+            "id": 6,
             "title": "a user I want to be able to create a sprint",
             "description": "A sprint is a period of time during which a set of stories are worked on",
-            "dependencies": ["G"],
+            "dependencies": [7],
             "storyPoints": 10
         },
         {
-            "id": "G",
+            "id": 7,
             "title": "As a user I want to be able to create a ",
             "description": "A sprint is a period of time during which a set of stories are worked on",
-            "dependencies": ["A", "D", "H"],
+            "dependencies": [1, 4, 8],
             "storyPoints": 12
         },
         {
-            "id": "H",
+            "id": 8,
             "title": " sprint",
             "description": "A sprint is a period of time during which a set of stories are worked on",
-            "dependencies": ["C", "D"],
+            "dependencies": [3, 4],
             "storyPoints": 8
         }
     ],
     "developers": [
         {
-            "id": "1",
+            "id": 1,
             "name": "John",
-            "capacity": 100,
-            "sprintCapacity": 7
+            "capacity": 100
         },
         {
-            "id": "2",
+            "id": 2,
             "name": "Leah",
-            "capacity": 100,
-            "sprintCapacity": 9
+            "capacity": 100
         },
         {
-            "id": "3",
+            "id": 3,
             "name": "Lana",
-            "capacity": 120,
-            "sprintCapacity": 7
+            "capacity": 120
         },
         {
-            "id": "4",
+            "id": 4,
             "name": "Angella",
-            "capacity": 150,
-            "sprintCapacity": 10
+            "capacity": 150
         }
     ]
 }

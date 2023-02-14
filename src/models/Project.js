@@ -20,7 +20,6 @@ module.exports = (sequelize, DataTypes) => {
       title: {
         type: DataTypes.STRING,
         allowNull: false,
-        unique: true,
       },
       duration: {
         type: DataTypes.INTEGER,
@@ -31,6 +30,10 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         allowNull: false,
         defaultValue: 2, // 2 weeks (= 10 working days)
+      },
+      sprintCapacity: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
       },
     },
     {

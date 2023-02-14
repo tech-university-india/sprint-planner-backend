@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
   Developer.init(
     {
       id: {
-        type: DataTypes.STRING,
+        type: DataTypes.INTEGER,
         primaryKey: true,
         allowNull: false,
       },
@@ -23,10 +23,6 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
       },
       capacity: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-      },
-      sprintCapacity: {
         type: DataTypes.INTEGER,
         allowNull: false,
       },

@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
   Story.init(
     {
       id: {
-        type: DataTypes.STRING,
+        type: DataTypes.INTEGER,
         primaryKey: true,
         allowNull: false,
       },
@@ -31,16 +31,21 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
       },
       dependencies: {
-        type: DataTypes.ARRAY(DataTypes.STRING),
+        type: DataTypes.ARRAY(DataTypes.INTEGER),
         defaultValue: [],
       },
       //   developerId: {
       //     type: DataTypes.INTEGER,
       //     allowNull: true,
       //   },
+      preAssignedDeveloperId: {
+        type: DataTypes.INTEGER,
+        allowNull: true,
+      },
       projectId: {
         type: DataTypes.UUID,
         allowNull: false,
+        primaryKey: true, // composite primary key (id, projectId)
       },
     },
     {

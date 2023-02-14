@@ -4,7 +4,7 @@ module.exports = {
     // table name: developer
     await queryInterface.createTable('developer', {
       id: {
-        type: Sequelize.STRING, // input from frontend
+        type: Sequelize.INTEGER, // input from frontend
         primaryKey: true,
         allowNull: false,
       },
@@ -16,10 +16,6 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
-      sprintCapacity: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-      },
       projectId: {
         type: Sequelize.UUID,
         allowNull: false,
@@ -28,6 +24,7 @@ module.exports = {
           key: 'id',
         },
         onDelete: 'CASCADE',
+        primaryKey: true, // composite primary key (id, projectId)
       },
       created_at: {
         type: Sequelize.DATE,

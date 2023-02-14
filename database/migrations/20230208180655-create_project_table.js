@@ -11,7 +11,6 @@ module.exports = {
       title: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true,
       },
       duration: {
         type: Sequelize.INTEGER,
@@ -19,6 +18,10 @@ module.exports = {
         defaultValue: null,
       },
       sprintDuration: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
+      sprintCapacity: {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
