@@ -31,7 +31,9 @@ const createProject = async (req, res) => {
       developers,
     });
     // do sprint calculation on this data
-    const sprintCalculation = PROJECT_UTILS.calculateSprint(result);
+    const sprintCalculation = PROJECT_UTILS.calculateSprint(
+      JSON.parse(JSON.stringify(result))
+    );
     return res.status(201).json({
       message: 'Project created successfully',
       data: sprintCalculation,

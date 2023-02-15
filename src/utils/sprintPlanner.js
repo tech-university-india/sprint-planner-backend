@@ -6,7 +6,10 @@ const getDependencyGraph = (stories) => {
     dependencyGraph.push([]);
     indegrees[i] = stories[i].dependencies.length;
   }
+  console.log(`dependencyGraph`, dependencyGraph);
   for (let i = 0; i < stories.length; i++) {
+    console.log(`i`, i);
+    console.log(`stories[i].dependencies`, stories[i].dependencies);
     for (let j = 0; j < stories[i].dependencies.length; j++) {
       dependencyGraph[stories[i].dependencies[j]].push(i);
     }
@@ -95,7 +98,7 @@ const initializeStories = (stories) => {
     stories[i].startDay = -1;
     stories[i].endDay = -1;
     stories[i].dummyDevs = [];
-    stories[i].remainingDuration = stories[i].duration;
+    stories[i].remainingDuration = stories[i].storyPoints;
   }
 };
 
@@ -263,6 +266,10 @@ const planSprints = (stories, numberOfSprints, sprintDuration, capacity) => {
 
 // main function
 const getSprints = (stories, developers, sprintDuration, capacity) => {
+  console.log('stories', JSON.stringify(stories, null, 2));
+  console.log('developers', developers);
+  console.log('sprintDuration', sprintDuration);
+  console.log('capacity', capacity);
   if (developers.length === 0) throw new Error('No developers available');
   if (stories.length === 0) throw new Error('No stories available');
   const { dependencyGraph, indegrees } = getDependencyGraph(stories);
@@ -284,7 +291,9 @@ const getSprints = (stories, developers, sprintDuration, capacity) => {
     numberOfSprints,
     sprintDuration,
     capacity
-  );
+  ); // also return the developers array with the stories assigned to them
+  
+  console.log('gfdghvmbn', sprints);
   return sprints;
 };
 
