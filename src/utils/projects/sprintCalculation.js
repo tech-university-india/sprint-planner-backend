@@ -10,8 +10,19 @@ const calculateSprint = (project) => {
   [stories, storyMap] = mapStoriesToNumberIds(stories);
   [developers, developerMap] = mapDevelopersToNumberIds(developers);
   */
+  const updatedStories = stories.map((story) => {
+    const { preAssignedDeveloperId } = story;
+    const x = {
+      ...story,
+    };
+    delete x.preAssignedDeveloperId;
+    return {
+      ...x,
+      assignedDeveloperId: preAssignedDeveloperId,
+    };
+  });
   const sprints = getSprints(
-    stories,
+    updatedStories, // stories,
     developers,
     sprintDuration,
     sprintCapacity
@@ -19,7 +30,7 @@ const calculateSprint = (project) => {
 
   console.log(`Sprints`, sprints);
 
-  return { ...project, ...sprints };
+  return { ...project, sprints };
 };
 
 module.exports = calculateSprint;

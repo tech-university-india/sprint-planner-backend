@@ -8,7 +8,7 @@ const output1 = {
           { id: 1, name: 'mukul' },
           { id: 2, name: 'sahil' },
         ],
-        duration: 6,
+        storyPoints: 6,
         endDay: 3,
         id: 4,
         remainingDuration: 0,
@@ -22,7 +22,7 @@ const output1 = {
           { id: 1, name: 'mukul' },
           { id: 2, name: 'sahil' },
         ],
-        duration: 5,
+        storyPoints: 5,
         endDay: 4,
         id: 5,
         remainingDuration: -1,
@@ -35,7 +35,7 @@ const output1 = {
           { id: 0, name: 'harbir' },
           { id: 2, name: 'sahil' },
         ],
-        duration: 5,
+        storyPoints: 5,
         endDay: 7,
         id: 0,
         remainingDuration: -1,
@@ -49,7 +49,7 @@ const output1 = {
           { id: 0, name: 'harbir' },
           { id: 2, name: 'sahil' },
         ],
-        duration: 4,
+        storyPoints: 4,
         endDay: 8,
         id: 2,
         remainingDuration: -2,
@@ -63,7 +63,7 @@ const output1 = {
           { id: 0, name: 'harbir' },
           { id: 2, name: 'sahil' },
         ],
-        duration: 2,
+        storyPoints: 2,
         endDay: 9,
         id: 3,
         remainingDuration: -1,
@@ -77,7 +77,7 @@ const output1 = {
           { id: 0, name: 'harbir' },
           { id: 2, name: 'sahil' },
         ],
-        duration: 3,
+        storyPoints: 3,
         endDay: 10,
         id: 1,
         remainingDuration: 0,
@@ -92,7 +92,7 @@ const output2 = {
       {
         id: 4,
         dependencies: [],
-        duration: 6,
+        storyPoints: 6,
         assignedDeveloperId: 0,
         startDay: 0,
         endDay: 6,
@@ -102,7 +102,7 @@ const output2 = {
       {
         id: 5,
         dependencies: [],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 1,
         startDay: 0,
         endDay: 5,
@@ -112,7 +112,7 @@ const output2 = {
       {
         id: 2,
         dependencies: [5],
-        duration: 4,
+        storyPoints: 4,
         assignedDeveloperId: 1,
         startDay: 5,
         endDay: 9,
@@ -122,7 +122,7 @@ const output2 = {
       {
         id: 0,
         dependencies: [4, 5],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 0,
         startDay: 6,
         endDay: 11,
@@ -132,7 +132,7 @@ const output2 = {
       {
         id: 3,
         dependencies: [2],
-        duration: 2,
+        storyPoints: 2,
         assignedDeveloperId: 1,
         startDay: 9,
         endDay: 11,
@@ -144,7 +144,7 @@ const output2 = {
       {
         id: 0,
         dependencies: [4, 5],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 0,
         startDay: 6,
         endDay: 11,
@@ -154,7 +154,7 @@ const output2 = {
       {
         id: 3,
         dependencies: [2],
-        duration: 2,
+        storyPoints: 2,
         assignedDeveloperId: 1,
         startDay: 9,
         endDay: 11,
@@ -164,7 +164,7 @@ const output2 = {
       {
         id: 1,
         dependencies: [3, 4],
-        duration: 3,
+        storyPoints: 3,
         assignedDeveloperId: 0,
         startDay: 11,
         endDay: 13,
@@ -183,7 +183,7 @@ const output3 = {
       {
         id: 4,
         dependencies: [],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 1,
         startDay: 0,
         endDay: 5,
@@ -193,7 +193,7 @@ const output3 = {
       {
         id: 5,
         dependencies: [],
-        duration: 6,
+        storyPoints: 6,
         assignedDeveloperId: 0,
         startDay: 0,
         endDay: 6,
@@ -206,7 +206,7 @@ const output3 = {
       {
         id: 0,
         dependencies: [4, 5],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 0,
         startDay: 6,
         endDay: 11,
@@ -216,7 +216,7 @@ const output3 = {
       {
         id: 2,
         dependencies: [5],
-        duration: 4,
+        storyPoints: 4,
         assignedDeveloperId: 1,
         startDay: 6,
         endDay: 10,
@@ -228,7 +228,7 @@ const output3 = {
       {
         id: 0,
         dependencies: [4, 5],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 0,
         startDay: 6,
         endDay: 11,
@@ -238,7 +238,7 @@ const output3 = {
       {
         id: 3,
         dependencies: [2],
-        duration: 2,
+        storyPoints: 2,
         assignedDeveloperId: 1,
         startDay: 10,
         endDay: 12,
@@ -251,7 +251,7 @@ const output3 = {
       {
         id: 1,
         dependencies: [3, 4],
-        duration: 3,
+        storyPoints: 3,
         assignedDeveloperId: 1,
         startDay: 12,
         endDay: 14,
@@ -270,7 +270,7 @@ const output4 = {
       {
         id: 4,
         dependencies: [],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 1,
         startDay: 0,
         endDay: 3,
@@ -283,7 +283,7 @@ const output4 = {
       {
         id: 5,
         dependencies: [],
-        duration: 6,
+        storyPoints: 6,
         assignedDeveloperId: 0,
         startDay: 0,
         endDay: 4,
@@ -297,7 +297,7 @@ const output4 = {
       {
         id: 0,
         dependencies: [4, 5],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 0,
         startDay: 4,
         endDay: 7,
@@ -310,7 +310,7 @@ const output4 = {
       {
         id: 2,
         dependencies: [5],
-        duration: 4,
+        storyPoints: 4,
         assignedDeveloperId: 1,
         startDay: 4,
         endDay: 8,
@@ -324,7 +324,7 @@ const output4 = {
       {
         id: 3,
         dependencies: [2],
-        duration: 2,
+        storyPoints: 2,
         assignedDeveloperId: 1,
         startDay: 8,
         endDay: 9,
@@ -338,7 +338,7 @@ const output4 = {
       {
         id: 1,
         dependencies: [3, 4],
-        duration: 3,
+        storyPoints: 3,
         assignedDeveloperId: 1,
         startDay: 9,
         endDay: 10,
@@ -361,7 +361,7 @@ const output6 = {
       {
         id: 4,
         dependencies: [],
-        duration: 6,
+        storyPoints: 6,
         assignedDeveloperId: 0,
         startDay: 0,
         endDay: 3,
@@ -374,7 +374,7 @@ const output6 = {
       {
         id: 5,
         dependencies: [],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 2,
         startDay: 0,
         endDay: 4,
@@ -388,7 +388,7 @@ const output6 = {
       {
         id: 0,
         dependencies: [4, 5],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 2,
         startDay: 4,
         endDay: 7,
@@ -401,7 +401,7 @@ const output6 = {
       {
         id: 2,
         dependencies: [5],
-        duration: 4,
+        storyPoints: 4,
         assignedDeveloperId: 0,
         startDay: 4,
         endDay: 8,
@@ -415,7 +415,7 @@ const output6 = {
       {
         id: 3,
         dependencies: [2],
-        duration: 2,
+        storyPoints: 2,
         assignedDeveloperId: 0,
         startDay: 8,
         endDay: 9,
@@ -429,7 +429,7 @@ const output6 = {
       {
         id: 1,
         dependencies: [3, 4],
-        duration: 3,
+        storyPoints: 3,
         assignedDeveloperId: 0,
         startDay: 9,
         endDay: 10,
@@ -449,7 +449,7 @@ const output7 = {
       {
         id: 1,
         dependencies: [],
-        duration: 6,
+        storyPoints: 6,
         assignedDeveloperId: 1,
         startDay: 0,
         endDay: 6,
@@ -459,7 +459,7 @@ const output7 = {
       {
         id: 2,
         dependencies: [],
-        duration: 2,
+        storyPoints: 2,
         assignedDeveloperId: 0,
         startDay: 0,
         endDay: 2,
@@ -469,7 +469,7 @@ const output7 = {
       {
         id: 3,
         dependencies: [],
-        duration: 3,
+        storyPoints: 3,
         assignedDeveloperId: 2,
         startDay: 0,
         endDay: 3,
@@ -479,7 +479,7 @@ const output7 = {
       {
         id: 0,
         dependencies: [2],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 0,
         startDay: 2,
         endDay: 7,
@@ -489,7 +489,7 @@ const output7 = {
       {
         id: 4,
         dependencies: [],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 2,
         startDay: 3,
         endDay: 8,
@@ -499,7 +499,7 @@ const output7 = {
       {
         id: 5,
         dependencies: [],
-        duration: 4,
+        storyPoints: 4,
         assignedDeveloperId: 1,
         startDay: 6,
         endDay: 10,
@@ -509,7 +509,7 @@ const output7 = {
       {
         id: 6,
         dependencies: [],
-        duration: 3,
+        storyPoints: 3,
         assignedDeveloperId: 0,
         startDay: 7,
         endDay: 10,
@@ -519,7 +519,7 @@ const output7 = {
       {
         id: 7,
         dependencies: [],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 2,
         startDay: 8,
         endDay: 12,
@@ -534,7 +534,7 @@ const output7 = {
       {
         id: 7,
         dependencies: [],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 2,
         startDay: 8,
         endDay: 12,
@@ -547,7 +547,7 @@ const output7 = {
       {
         id: 8,
         dependencies: [],
-        duration: 6,
+        storyPoints: 6,
         assignedDeveloperId: 1,
         startDay: 10,
         endDay: 14,
@@ -567,7 +567,7 @@ const output8 = {
       {
         id: 0,
         dependencies: [],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 0,
         startDay: 0,
         endDay: 5,
@@ -580,7 +580,7 @@ const output8 = {
       {
         id: 1,
         dependencies: [],
-        duration: 4,
+        storyPoints: 4,
         assignedDeveloperId: 1,
         startDay: 0,
         endDay: 4,
@@ -590,7 +590,7 @@ const output8 = {
       {
         id: 2,
         dependencies: [0, 1],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 0,
         startDay: 5,
         endDay: 9,
@@ -603,7 +603,7 @@ const output8 = {
       {
         id: 4,
         dependencies: [0],
-        duration: 3,
+        storyPoints: 3,
         assignedDeveloperId: 1,
         startDay: 5,
         endDay: 8,
@@ -613,7 +613,7 @@ const output8 = {
       {
         id: 3,
         dependencies: [1, 2],
-        duration: 6,
+        storyPoints: 6,
         assignedDeveloperId: 0,
         startDay: 9,
         endDay: 14,
@@ -626,7 +626,7 @@ const output8 = {
       {
         id: 5,
         dependencies: [2, 4],
-        duration: 4,
+        storyPoints: 4,
         assignedDeveloperId: 1,
         startDay: 9,
         endDay: 13,
@@ -638,7 +638,7 @@ const output8 = {
       {
         id: 3,
         dependencies: [1, 2],
-        duration: 6,
+        storyPoints: 6,
         assignedDeveloperId: 0,
         startDay: 9,
         endDay: 14,
@@ -651,7 +651,7 @@ const output8 = {
       {
         id: 5,
         dependencies: [2, 4],
-        duration: 4,
+        storyPoints: 4,
         assignedDeveloperId: 1,
         startDay: 9,
         endDay: 13,
@@ -661,7 +661,7 @@ const output8 = {
       {
         id: 6,
         dependencies: [0, 2, 3],
-        duration: 3,
+        storyPoints: 3,
         assignedDeveloperId: 0,
         startDay: 14,
         endDay: 16,
@@ -674,7 +674,7 @@ const output8 = {
       {
         id: 7,
         dependencies: [6],
-        duration: 6,
+        storyPoints: 6,
         assignedDeveloperId: 0,
         startDay: 16,
         endDay: 19,
@@ -693,7 +693,7 @@ const output9 = {
       {
         id: 3,
         dependencies: [],
-        duration: 6,
+        storyPoints: 6,
         assignedDeveloperId: 1,
         startDay: 0,
         endDay: 3,
@@ -706,7 +706,7 @@ const output9 = {
       {
         id: 4,
         dependencies: [],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 0,
         startDay: 0,
         endDay: 5,
@@ -720,7 +720,7 @@ const output9 = {
       {
         id: 1,
         dependencies: [3],
-        duration: 1,
+        storyPoints: 1,
         assignedDeveloperId: 1,
         startDay: 3,
         endDay: 4,
@@ -733,7 +733,7 @@ const output9 = {
       {
         id: 0,
         dependencies: [4, 3],
-        duration: 4,
+        storyPoints: 4,
         assignedDeveloperId: 0,
         startDay: 5,
         endDay: 7,
@@ -746,7 +746,7 @@ const output9 = {
       {
         id: 2,
         dependencies: [3, 4],
-        duration: 3,
+        storyPoints: 3,
         assignedDeveloperId: 1,
         startDay: 5,
         endDay: 8,
@@ -766,7 +766,7 @@ const output10 = {
       {
         id: 4,
         dependencies: [],
-        duration: 5,
+        storyPoints: 5,
         startDay: 0,
         endDay: 3,
         remainingDuration: -1,
@@ -779,7 +779,7 @@ const output10 = {
       {
         id: 5,
         dependencies: [],
-        duration: 6,
+        storyPoints: 6,
         startDay: 0,
         endDay: 4,
         remainingDuration: 0,
@@ -793,7 +793,7 @@ const output10 = {
       {
         id: 0,
         dependencies: [4, 5],
-        duration: 4,
+        storyPoints: 4,
         startDay: 4,
         endDay: 7,
         remainingDuration: -1,
@@ -806,7 +806,7 @@ const output10 = {
       {
         id: 1,
         dependencies: [5],
-        duration: 1,
+        storyPoints: 1,
         startDay: 4,
         endDay: 5,
         remainingDuration: 0,
@@ -816,7 +816,7 @@ const output10 = {
       {
         id: 2,
         dependencies: [4, 5],
-        duration: 3,
+        storyPoints: 3,
         startDay: 4,
         endDay: 7,
         remainingDuration: 0,
@@ -826,7 +826,7 @@ const output10 = {
       {
         id: 3,
         dependencies: [0],
-        duration: 2,
+        storyPoints: 2,
         startDay: 7,
         endDay: 8,
         remainingDuration: -1,
@@ -846,7 +846,7 @@ const output11 = {
       {
         id: 0,
         dependencies: [],
-        duration: 3,
+        storyPoints: 3,
         assignedDeveloperId: 0,
         startDay: 0,
         endDay: 3,
@@ -856,7 +856,7 @@ const output11 = {
       {
         id: 3,
         dependencies: [],
-        duration: 4,
+        storyPoints: 4,
         assignedDeveloperId: 1,
         startDay: 0,
         endDay: 4,
@@ -869,7 +869,7 @@ const output11 = {
       {
         id: 5,
         dependencies: [],
-        duration: 11,
+        storyPoints: 11,
         assignedDeveloperId: 2,
         startDay: 0,
         endDay: 9,
@@ -883,7 +883,7 @@ const output11 = {
       {
         id: 1,
         dependencies: [0, 3],
-        duration: 6,
+        storyPoints: 6,
         assignedDeveloperId: 1,
         startDay: 4,
         endDay: 7,
@@ -896,7 +896,7 @@ const output11 = {
       {
         id: 2,
         dependencies: [1, 5],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 2,
         startDay: 9,
         endDay: 12,
@@ -909,7 +909,7 @@ const output11 = {
       {
         id: 4,
         dependencies: [1, 5],
-        duration: 3,
+        storyPoints: 3,
         assignedDeveloperId: 1,
         startDay: 9,
         endDay: 12,
@@ -921,7 +921,7 @@ const output11 = {
       {
         id: 2,
         dependencies: [1, 5],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 2,
         startDay: 9,
         endDay: 12,
@@ -934,7 +934,7 @@ const output11 = {
       {
         id: 4,
         dependencies: [1, 5],
-        duration: 3,
+        storyPoints: 3,
         assignedDeveloperId: 1,
         startDay: 9,
         endDay: 12,
@@ -950,7 +950,7 @@ const output12 = {
       {
         id: 0,
         dependencies: [],
-        duration: 3,
+        storyPoints: 3,
         assignedDeveloperId: 0,
         startDay: 0,
         endDay: 3,
@@ -960,7 +960,7 @@ const output12 = {
       {
         id: 3,
         dependencies: [],
-        duration: 4,
+        storyPoints: 4,
         assignedDeveloperId: 1,
         startDay: 0,
         endDay: 4,
@@ -970,7 +970,7 @@ const output12 = {
       {
         id: 5,
         dependencies: [],
-        duration: 11,
+        storyPoints: 11,
         assignedDeveloperId: 0,
         startDay: 3,
         endDay: 12,
@@ -983,7 +983,7 @@ const output12 = {
       {
         id: 1,
         dependencies: [0, 3],
-        duration: 6,
+        storyPoints: 6,
         assignedDeveloperId: 1,
         startDay: 4,
         endDay: 10,
@@ -995,7 +995,7 @@ const output12 = {
       {
         id: 5,
         dependencies: [],
-        duration: 11,
+        storyPoints: 11,
         assignedDeveloperId: 0,
         startDay: 3,
         endDay: 12,
@@ -1008,7 +1008,7 @@ const output12 = {
       {
         id: 2,
         dependencies: [1, 5],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 0,
         startDay: 12,
         endDay: 16,
@@ -1021,7 +1021,7 @@ const output12 = {
       {
         id: 4,
         dependencies: [1, 5],
-        duration: 3,
+        storyPoints: 3,
         assignedDeveloperId: 1,
         startDay: 12,
         endDay: 15,
@@ -1037,7 +1037,7 @@ const output13 = {
       {
         id: 0,
         dependencies: [],
-        duration: 3,
+        storyPoints: 3,
         assignedDeveloperId: 0,
         startDay: 0,
         endDay: 3,
@@ -1047,7 +1047,7 @@ const output13 = {
       {
         id: 3,
         dependencies: [],
-        duration: 4,
+        storyPoints: 4,
         assignedDeveloperId: 0,
         startDay: 3,
         endDay: 7,
@@ -1057,7 +1057,7 @@ const output13 = {
       {
         id: 1,
         dependencies: [0, 3],
-        duration: 6,
+        storyPoints: 6,
         assignedDeveloperId: 0,
         startDay: 7,
         endDay: 13,
@@ -1069,7 +1069,7 @@ const output13 = {
       {
         id: 1,
         dependencies: [0, 3],
-        duration: 6,
+        storyPoints: 6,
         assignedDeveloperId: 0,
         startDay: 7,
         endDay: 13,
@@ -1079,7 +1079,7 @@ const output13 = {
       {
         id: 5,
         dependencies: [],
-        duration: 11,
+        storyPoints: 11,
         assignedDeveloperId: 0,
         startDay: 13,
         endDay: 24,
@@ -1091,7 +1091,7 @@ const output13 = {
       {
         id: 5,
         dependencies: [],
-        duration: 11,
+        storyPoints: 11,
         assignedDeveloperId: 0,
         startDay: 13,
         endDay: 24,
@@ -1101,7 +1101,7 @@ const output13 = {
       {
         id: 2,
         dependencies: [1, 5],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 0,
         startDay: 24,
         endDay: 29,
@@ -1111,7 +1111,7 @@ const output13 = {
       {
         id: 4,
         dependencies: [1, 5],
-        duration: 3,
+        storyPoints: 3,
         assignedDeveloperId: 0,
         startDay: 29,
         endDay: 32,
@@ -1123,7 +1123,7 @@ const output13 = {
       {
         id: 4,
         dependencies: [1, 5],
-        duration: 3,
+        storyPoints: 3,
         assignedDeveloperId: 0,
         startDay: 29,
         endDay: 32,
@@ -1140,7 +1140,7 @@ const output14 = {
       {
         id: 0,
         dependencies: [],
-        duration: 3,
+        storyPoints: 3,
         assignedDeveloperId: 0,
         startDay: 0,
         endDay: 2,
@@ -1153,7 +1153,7 @@ const output14 = {
       {
         id: 3,
         dependencies: [],
-        duration: 4,
+        storyPoints: 4,
         assignedDeveloperId: 1,
         startDay: 0,
         endDay: 3,
@@ -1167,7 +1167,7 @@ const output14 = {
       {
         id: 5,
         dependencies: [],
-        duration: 11,
+        storyPoints: 11,
         assignedDeveloperId: 2,
         startDay: 0,
         endDay: 7,
@@ -1182,7 +1182,7 @@ const output14 = {
       {
         id: 1,
         dependencies: [0, 3],
-        duration: 6,
+        storyPoints: 6,
         assignedDeveloperId: 1,
         startDay: 3,
         endDay: 5,
@@ -1196,7 +1196,7 @@ const output14 = {
       {
         id: 2,
         dependencies: [1, 5],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 2,
         startDay: 7,
         endDay: 9,
@@ -1210,7 +1210,7 @@ const output14 = {
       {
         id: 4,
         dependencies: [1, 5],
-        duration: 3,
+        storyPoints: 3,
         assignedDeveloperId: 1,
         startDay: 7,
         endDay: 10,
@@ -1231,7 +1231,7 @@ const output15 = {
       {
         id: 3,
         dependencies: [],
-        duration: 8,
+        storyPoints: 8,
         assignedDeveloperId: 0,
         startDay: 0,
         endDay: 3,
@@ -1245,7 +1245,7 @@ const output15 = {
       {
         id: 1,
         dependencies: [3],
-        duration: 6,
+        storyPoints: 6,
         assignedDeveloperId: 0,
         startDay: 3,
         endDay: 6,
@@ -1259,7 +1259,7 @@ const output15 = {
       {
         id: 4,
         dependencies: [3],
-        duration: 2,
+        storyPoints: 2,
         assignedDeveloperId: 2,
         startDay: 3,
         endDay: 5,
@@ -1269,7 +1269,7 @@ const output15 = {
       {
         id: 0,
         dependencies: [1],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 0,
         startDay: 6,
         endDay: 9,
@@ -1282,7 +1282,7 @@ const output15 = {
       {
         id: 2,
         dependencies: [1, 3],
-        duration: 9,
+        storyPoints: 9,
         assignedDeveloperId: 1,
         startDay: 6,
         endDay: 11,
@@ -1298,7 +1298,7 @@ const output15 = {
       {
         id: 2,
         dependencies: [1, 3],
-        duration: 9,
+        storyPoints: 9,
         assignedDeveloperId: 1,
         startDay: 6,
         endDay: 11,
@@ -1318,7 +1318,7 @@ const output16 = {
       {
         id: 3,
         dependencies: [],
-        duration: 8,
+        storyPoints: 8,
         assignedDeveloperId: 0,
         startDay: 0,
         endDay: 4,
@@ -1331,7 +1331,7 @@ const output16 = {
       {
         id: 1,
         dependencies: [3],
-        duration: 6,
+        storyPoints: 6,
         assignedDeveloperId: 0,
         startDay: 4,
         endDay: 8,
@@ -1344,7 +1344,7 @@ const output16 = {
       {
         id: 4,
         dependencies: [3],
-        duration: 2,
+        storyPoints: 2,
         assignedDeveloperId: 1,
         startDay: 4,
         endDay: 6,
@@ -1354,7 +1354,7 @@ const output16 = {
       {
         id: 0,
         dependencies: [1],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 0,
         startDay: 8,
         endDay: 13,
@@ -1364,7 +1364,7 @@ const output16 = {
       {
         id: 2,
         dependencies: [1, 3],
-        duration: 9,
+        storyPoints: 9,
         assignedDeveloperId: 1,
         startDay: 8,
         endDay: 15,
@@ -1379,7 +1379,7 @@ const output16 = {
       {
         id: 0,
         dependencies: [1],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 0,
         startDay: 8,
         endDay: 13,
@@ -1389,7 +1389,7 @@ const output16 = {
       {
         id: 2,
         dependencies: [1, 3],
-        duration: 9,
+        storyPoints: 9,
         assignedDeveloperId: 1,
         startDay: 8,
         endDay: 15,
@@ -1408,7 +1408,7 @@ const output17 = {
       {
         id: 3,
         dependencies: [],
-        duration: 8,
+        storyPoints: 8,
         assignedDeveloperId: 0,
         startDay: 0,
         endDay: 2,
@@ -1423,7 +1423,7 @@ const output17 = {
       {
         id: 1,
         dependencies: [3],
-        duration: 6,
+        storyPoints: 6,
         assignedDeveloperId: 0,
         startDay: 2,
         endDay: 4,
@@ -1437,7 +1437,7 @@ const output17 = {
       {
         id: 4,
         dependencies: [3],
-        duration: 2,
+        storyPoints: 2,
         assignedDeveloperId: 2,
         startDay: 2,
         endDay: 4,
@@ -1447,7 +1447,7 @@ const output17 = {
       {
         id: 0,
         dependencies: [1],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 0,
         startDay: 4,
         endDay: 6,
@@ -1461,7 +1461,7 @@ const output17 = {
       {
         id: 2,
         dependencies: [1, 3],
-        duration: 9,
+        storyPoints: 9,
         assignedDeveloperId: 1,
         startDay: 4,
         endDay: 8,
@@ -1485,7 +1485,7 @@ const output20 = {
       {
         id: 0,
         dependencies: [],
-        duration: 3,
+        storyPoints: 3,
         assignedDeveloperId: 0,
         startDay: 0,
         endDay: 3,
@@ -1495,7 +1495,7 @@ const output20 = {
       {
         id: 3,
         dependencies: [],
-        duration: 4,
+        storyPoints: 4,
         assignedDeveloperId: 0,
         startDay: 3,
         endDay: 7,
@@ -1505,7 +1505,7 @@ const output20 = {
       {
         id: 1,
         dependencies: [0, 3],
-        duration: 6,
+        storyPoints: 6,
         assignedDeveloperId: 0,
         startDay: 7,
         endDay: 13,
@@ -1515,7 +1515,7 @@ const output20 = {
       {
         id: 5,
         dependencies: [],
-        duration: 11,
+        storyPoints: 11,
         assignedDeveloperId: 0,
         startDay: 13,
         endDay: 24,
@@ -1527,7 +1527,7 @@ const output20 = {
       {
         id: 5,
         dependencies: [],
-        duration: 11,
+        storyPoints: 11,
         assignedDeveloperId: 0,
         startDay: 13,
         endDay: 24,
@@ -1537,7 +1537,7 @@ const output20 = {
       {
         id: 2,
         dependencies: [1, 5],
-        duration: 5,
+        storyPoints: 5,
         assignedDeveloperId: 0,
         startDay: 24,
         endDay: 29,
@@ -1547,7 +1547,7 @@ const output20 = {
       {
         id: 4,
         dependencies: [1, 5],
-        duration: 3,
+        storyPoints: 3,
         assignedDeveloperId: 0,
         startDay: 29,
         endDay: 32,
@@ -1559,7 +1559,7 @@ const output20 = {
       {
         id: 4,
         dependencies: [1, 5],
-        duration: 3,
+        storyPoints: 3,
         assignedDeveloperId: 0,
         startDay: 29,
         endDay: 32,
