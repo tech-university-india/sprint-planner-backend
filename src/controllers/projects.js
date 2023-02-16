@@ -13,7 +13,7 @@ const getProject = async (req, res) => {
     }
     return res.status(404).json({ message: 'Project not found' });
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     return res.status(500).json({ message: error.message });
   }
 };
@@ -39,7 +39,7 @@ const createProject = async (req, res) => {
       data: sprintCalculation,
     });
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     return res.status(500).json({ message: error.message });
   }
 };
