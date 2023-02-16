@@ -1,7 +1,7 @@
 const joi = require('joi');
 
 const getProjectParams = joi.object({
-  id: joi.number().required(),
+  id: joi.string().required(),
 });
 
 const createProjectRequest = joi.object({
@@ -21,7 +21,7 @@ const createProjectRequest = joi.object({
   ),
   developers: joi.array().items(
     joi.object({
-      id: joi.string().required(),
+      id: joi.number().required(),
       name: joi.string().required(),
       capcity: joi.number().required(),
     })
