@@ -1,5 +1,6 @@
 const projectServices = require('../../src/services/projects');
 const projectController = require('../../src/controllers/projects');
+const projectUtils = require('../../src/utils/projects');
 
 describe('Project Controller', () => {
   describe('createProject', () => {
@@ -41,11 +42,18 @@ describe('Project Controller', () => {
       jest
         .spyOn(projectServices, 'createProject')
         .mockResolvedValue(mockResult);
+      const mockData = {
+        title: 'Test Project',
+        sprintDuration: 2,
+        stories: [],
+        developers: [],
+      };
+      jest.spyOn(projectUtils, 'calculateSprint').mockReturnValue(mockData);
       await projectController.createProject(mockReq, mockRes);
       expect(mockRes.status).toBeCalledWith(201);
       expect(mockRes.json).toBeCalledWith({
         message: 'Project created successfully',
-        data: mockResult,
+        data: mockData,
       });
     });
   });
