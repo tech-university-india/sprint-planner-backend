@@ -6,10 +6,18 @@ const getProject = async (req, res) => {
     const { id } = req.params;
     const result = await PROJECT_SERVICES.getProject(id);
     if (result) {
-      return res.status(200).json({
-        message: 'Project fetched successfully',
-        data: result,
+      // do sprint calculation on this data
+      const sprintCalculation = PROJECT_UTILS.calculateSprint(
+        JSON.parse(JSON.stringify(result))
+      );
+      return res.status(201).json({
+        message: 'Project created successfully',
+        data: sprintCalculation,
       });
+      // return res.status(200).json({
+      //   message: 'Project fetched successfully',
+      //   data: result,
+      // });
     }
     return res.status(404).json({ message: 'Project not found' });
   } catch (error) {

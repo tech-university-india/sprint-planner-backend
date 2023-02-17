@@ -2,7 +2,7 @@ const { getSprints } = require('../sprintPlanner');
 
 const calculateSprint = (project) => {
   // data preparation
-  console.log(project);
+  // console.log(project);
   const { stories, developers, sprintDuration, sprintCapacity } = project;
   /*
   let storyMap;
@@ -28,7 +28,7 @@ const calculateSprint = (project) => {
     sprintCapacity
   );
 
-  console.log(`Sprints`, sprints);
+  // console.log(`Sprints`, sprints);
 
   return { ...project, sprints };
 };
